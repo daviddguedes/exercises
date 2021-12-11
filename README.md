@@ -12,7 +12,7 @@
 
 ## Instalation
 
-* `gti clone ...`
+* `gti clone https://github.com/daviddguedes/exercises.git`
 * `cd path/to/folder`
 * Exercise 1: Run `node numbers.js`
 * Exercise 2: Run `node countries.js`
