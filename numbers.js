@@ -10,7 +10,7 @@ function printValues(max, min = 1, steps) {
             arrValues.push(item);
         }
     }
-    return arrValues.reduce((prev, curr) => {
+    return arrValues.map((curr) => {
         let value = curr;
         if (curr % 3 === 0) {
             value = 'Visual';
@@ -21,8 +21,8 @@ function printValues(max, min = 1, steps) {
         if ((curr % 3 === 0) && (curr % 5 === 0)) {
             value = 'Visual Nuts';
         }
-        return [...prev, value];
-    }, []);
+        return value;
+    });
 }
 
 const result = printValues(100);
